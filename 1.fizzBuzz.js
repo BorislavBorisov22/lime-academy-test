@@ -2,7 +2,7 @@ const isMultipleOf = (number, multiple) => {
     return number % multiple === 0;
 }
 
-const fizzBuzz = (n) => {
+function fizzBuzz(n) {
     for (let i = 1; i <= n; i++) {
         const isMultipleOfThree = isMultipleOf(i, 3);
         const isMultipleOfFive = isMultipleOf(i, 5);
