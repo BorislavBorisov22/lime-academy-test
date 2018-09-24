@@ -1,4 +1,3 @@
-
 const factorial = (n) => {
    let result = 1;
    while (n) {
@@ -14,6 +13,7 @@ function music(n, k, l) {
     return result;
 }
 
-console.log(music(1, 0, 3));
-console.log(music(1,1,3));
-console.log(music(3,1,3));
+// sample  test cases
+console.log(music(1, 0, 3)); // 1
+console.log(music(1,1,3)); // 0
+console.log(music(3,1,3)); // 6
