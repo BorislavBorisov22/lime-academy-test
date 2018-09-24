@@ -18,7 +18,6 @@ async function getMovieTitles(substr) {
         const searchString = `https://jsonmock.hackerrank.com/api/movies/search/?Title=${substr}`;
         const { total_pages } = await httpGet(searchString);
 
-        console.log(total_pages, 'pages count');
         const getMoviesPromises = Array.from({ length: total_pages }).map((_, index) => {
             return httpGet(searchString + `&page=${index + 1}`);
         });
